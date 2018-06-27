@@ -20,12 +20,8 @@ parser.add_argument("-i", "--input_file", type=str, required=True, help="input n
 parser.add_argument("-o", "--output_file", type=str, required=True, help="output numpy file (.npz) containing the output tensor from customized deconv"
                                                                         "\nNOTE the output tensor are ndarray of shape (out_h, out_w, out_c)"
                                                                         "\nand dtype np.float32, its name is 'output'")
-parser.add_argument("-hp", "--hpadding", type=int, default=0, help="padding in height dimension")
-parser.add_argument("-wp", "--wpadding", type=int, default=0, help="padding in width dimension")
 parser.add_argument("-hs", "--hstride", type=int, default=1, help="stride in height dimension")
 parser.add_argument("-ws", "--wstride", type=int, default=1, help="stride in width dimension")
-parser.add_argument("-hdr", "--hdilation_rate", type=int, default=1, help="dilation rate in height dimension")
-parser.add_argument("-wdr", "--wdilation_rate", type=int, default=1, help="dilation rate in width dimension")
 parser.add_argument("-g", "--gpu", type=int, required=True, help="gpu id to run on")
 
 if __name__ == "__main__":
