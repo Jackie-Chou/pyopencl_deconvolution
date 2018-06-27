@@ -5,7 +5,7 @@ complete configuration involving paddings, strides, dilation rates in both spati
 
 the basic idea is using matrix multiplication to implement deconvolution
 
-##file description
+##file description##
 
 check: folder contains opencl code to check the configuration of the machine and opencl
 
