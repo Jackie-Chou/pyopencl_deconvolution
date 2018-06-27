@@ -119,7 +119,7 @@ def main():
     platform = cl.get_platforms()[0]
     print platform
 
-    device = platform.get_devices()[1]
+    device = platform.get_devices()[args.gpu]
     print device
 
     context = cl.Context([device])

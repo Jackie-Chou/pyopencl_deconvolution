@@ -11,7 +11,7 @@ check: folder contains opencl code to check the configuration of the machine and
 
 src: folder contains main source code
 
-- deconv.py: main code of deconvolution, NOTE the platform and device choices are hard coded, one may feel free to change the choices. run *python deconv.py -h* for arguments and usage.also NOTE this file reads input feature map and kernel from input .npz file, and result will be stored to an output .npz file, example files please refer to *input.npz* and *output.npz*
+- deconv.py: main code of deconvolution, NOTE the platform choice is hard coded to 0, one may feel free to change it. run *python deconv.py -h* for arguments and usage.also NOTE this file reads input feature map and kernel from input .npz file, and result will be stored to an output .npz file, example files please refer to *input.npz* and *output.npz*
 
 - kernels.cl: opencl kernel function file,  NOTE the implementation here is to let one work-item process a whole element in output tensor, which may not be optimal yet.
 
